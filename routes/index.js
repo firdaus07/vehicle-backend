@@ -30,7 +30,7 @@ router.get('/welcome', function(req, res, next) {
 
 
 router.get('/wel', function(req, res, next) {
-    res.send('Firdaus');
+    res.send('Welcome to Heroku..!!');
 });
 
 module.exports = router;
