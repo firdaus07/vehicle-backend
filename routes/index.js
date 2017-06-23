@@ -33,4 +33,14 @@ router.get('/wel', function(req, res, next) {
     res.send('Welcome to Heroku..!!');
 });
 
+router.get('/push', function(req, res, next) {
+ docs.update({"emailid":"firdausansari250@gmail.com", "id":"5e439"},
+     {$push:{"group":{"name":"user3"}}},
+     function(err,docs) {
+         if (err) console.log(err)
+         else res.send("Success");
+     })
+
+});
+
 module.exports = router;
