@@ -7,6 +7,7 @@ const db=require('monk')(URL);
 
 const docs=db.get('mongocollect');
 /* GET home page. */
+
 router.get('/welcome', function(req, res, next) {
     // res.render('index', { title: 'Express' });
 
